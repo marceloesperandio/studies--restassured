@@ -10,7 +10,7 @@
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="jdk" jdkName="19" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: io.rest-assured:rest-assured:5.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.groovy:groovy:4.0.1" level="project" />
