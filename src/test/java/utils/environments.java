@@ -1,8 +1,8 @@
 package utils;
 
-public class environment {
+public class environments {
 
-    public String fakerestapi = "https://fakerestapi.azurewebsites.net/index.html";
+    public String apiFakerestapi = "https://fakerestapi.azurewebsites.net";
     public String reqres = "https://reqres.in/";
     public String httpbin = "https://httpbin.org/#/";
 
