@@ -21,23 +21,28 @@ public class ActivitiesApi extends environments {
                 .get(apiFakerestapi + "/api/v1/Activities")
                 .then().log().all()
                 .statusCode(200)
-//                .body("title", containsString("Activity 1"))
-//                .body("dueDate", greaterThan("2022-10-24T00:52:01.9727697+00:00"))
-////              .body("completed", is(false))
+                .body("title", containsString("Activity 1"))
+                .body("dueDate", greaterThan("2022-10-24T00:52:01.9727697+00:00"))
+                .body("completed", is(false))
         ;
     }
 
     @Test
     public void postRequest() {
-        Response response = given()
-                .body(activitiesBody.postRequestBody)
+        given()
+                .body("{\n" +
+                        "  \"id\": 0,\n" +
+                        "  \"title\": \"string\",\n" +
+                        "  \"dueDate\": \"2022-11-07T21:04:09.870Z\",\n" +
+                        "  \"completed\": true\n" +
+                        "}")
                 .when().log().all()
                 .post(apiFakerestapi + "/api/v1/Activities")
                 .then().log().all()
                 .statusCode(200)
-//                .body("title", containsString("Activity 1"))
-//                .body("dueDate", greaterThan("2022-10-24T00:52:01.9727697+00:00"))
-//                .body("completed", is(false))
+                .body("title", containsString("Activity 1"))
+                .body("dueDate", greaterThan("2022-10-24T00:52:01.9727697+00:00"))
+                .body("completed", is(false))
                 .extract().response();
         ;
     }
